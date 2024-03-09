@@ -7,6 +7,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin-bottom: 0;
   margin-top: 0;
@@ -25,7 +28,7 @@ ol {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -114,8 +117,18 @@ img {
 }
 
 .header-wrap {
-  padding: 188px 292px;
-  
+  display: block;
+  margin: 0 auto;
+  padding-top: 188px;
+  max-width: 496px;
+  margin-bottom: 48px;
+}
+
+.button-head {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 188px;
 }
 
 .header-title {
@@ -123,15 +136,10 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #fff;
   margin-bottom: 48px;
+  text-align: center;
   max-width: 496px;
-}
-
-.buttonhead {
-  display: flex;
- 
 }
 
 .header-btn {
@@ -145,7 +153,6 @@ img {
   border-radius: 4px;
   border: 0;
   padding: 16px 32px;
-  
 }
 
 .header-btn:hover,
@@ -165,7 +172,7 @@ img {
 }
 
 .list-item {
-  width: calc((100% - 3 * 24px) / 4)
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .visually-hidden {
@@ -181,10 +188,8 @@ img {
   overflow: hidden;
 }
 
-
 .team {
   background-color: #f4f4fd;
-  
 }
 
 .section-item {
@@ -204,9 +209,9 @@ img {
 }
 
 .team-menu {
-display: flex;
-flex-wrap: wrap;
-column-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
 }
 
 .section-title {
@@ -216,24 +221,26 @@ column-gap: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  text-align: center;
+
   margin-top: 32px;
 }
 
 .team-img {
- margin-bottom: 32px;
-} 
+  margin-bottom: 32px;
+}
+
+.align-team {
+  text-align: center;
+}
 
 .section-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+
   margin-bottom: 32px;
 }
-
-
 
 .portfolio-menu {
   display: flex;
@@ -241,7 +248,9 @@ column-gap: 24px;
   gap: 24px;
 }
 
-
+.section-border {
+  border: 1px solid #e7e9fc;
+}
 
 /**======footer===========**/
 
@@ -253,6 +262,9 @@ column-gap: 24px;
   align-items: left;
 }
 
+.footer-menu {
+  display: block;
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -261,7 +273,6 @@ column-gap: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-
 }
 .footer-logo-part {
   font-weight: 700;
@@ -276,4 +287,6 @@ column-gap: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
+  max-width: 264px;
 }
