@@ -119,20 +119,6 @@ img {
   margin: 0 auto;
 }
 
-.header-wrap {
-  display: block;
-  margin: 0 auto;
-  max-width: 496px;
-  margin-bottom: 48px;
-}
-
-.button-head {
-  display: block;
-  margin: 0 auto;
-  min-width: 169px;
-  text-align: center;
-}
-
 .header-title {
   font-weight: 700;
   font-size: 56px;
@@ -156,6 +142,9 @@ img {
   border: none;
   padding: 16px 32px;
   height: 56px;
+  display: block;
+  min-width: 169px;
+  text-align: center;
 }
 
 
@@ -199,7 +188,7 @@ img {
 
 .section-item {
   background-color: #fff;
-  width: calc((100% - 3 * 24px) / 4);´
+  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
 }
 
@@ -269,9 +258,15 @@ img {
   align-items: left;
 }
 
-.footer-menu {
-  display: block;
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
+
+.footer-container-text {
+  max-width: 264px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -297,5 +292,5 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-top: 16px;
-  max-width: 264px;
+  
 }
