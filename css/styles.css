@@ -258,14 +258,6 @@ img {
   align-items: left;
 }
 
-.footer-link {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.footer-container-text {
-  max-width: 264px;
-}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -284,6 +276,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -292,5 +286,5 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-top: 16px;
-  
+  max-width: 264px;
 }
